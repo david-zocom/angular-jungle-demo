@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-demo1';
+	title: string = 'The jungle';
+	animals: string[] = ['humans', 'fesk', 'jettemoa'];
+	friendAnimal: string = 'zebra';
+
+	onMakeFriendsClick() {
+		console.log('You made a new friend!');
+	}
 }
